@@ -1,16 +1,10 @@
-import java.util.Scanner;
-
 public class GarbageCollection {
     
-    // TODO: Override the finalize() method
     @Override
     protected void finalize() throws Throwable {
         System.out.println("Garbage Collected");
         super.finalize();
     }
-    
-    // protected void finalize()
-    // Inside it, print "Garbage Collected"
 
     public static void main(String[] args) {
 
